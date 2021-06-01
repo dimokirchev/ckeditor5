@@ -31,6 +31,9 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 
+import Font from '@ckeditor/ckeditor5-font/src/font';
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily'; 
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -38,6 +41,8 @@ ClassicEditor.builtinPlugins = [
 	Essentials,
 	UploadAdapter,
 	Autoformat,
+	Font,
+	FontFamily,
 	Bold,
 	Italic,
 	BlockQuote,
@@ -69,6 +74,10 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'|',
+			'font',
+			'fontFamily',
+			'|',
 			'link',
 			'bulletedList',
 			'numberedList',
