@@ -33,6 +33,8 @@ import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices'
 
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily'; 
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor'; 
+import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor'; 
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -43,6 +45,8 @@ ClassicEditor.builtinPlugins = [
 	Autoformat,
 	Font,
 	FontFamily,
+	FontColor,
+	FontBackgroundColor,
 	Bold,
 	Italic,
 	BlockQuote,
@@ -85,7 +89,7 @@ ClassicEditor.defaultConfig = {
 			'outdent',
 			'indent',
 			'|',
-			'uploadImage',
+			// 'uploadImage',
 			'blockQuote',
 			'insertTable',
 			'mediaEmbed',
@@ -93,14 +97,14 @@ ClassicEditor.defaultConfig = {
 			'redo'
 		]
 	},
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
-		]
-	},
+	// image: {
+	// 	toolbar: [
+	// 		'imageStyle:full',
+	// 		'imageStyle:side',
+	// 		'|',
+	// 		'imageTextAlternative'
+	// 	]
+	// },
 	table: {
 		contentToolbar: [
 			'tableColumn',
