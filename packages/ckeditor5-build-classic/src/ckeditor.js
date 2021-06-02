@@ -81,6 +81,8 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'font',
 			'fontFamily',
+			'fontColor',
+			'fontBackgroundColor',
 			'|',
 			'link',
 			'bulletedList',
