@@ -35,6 +35,7 @@ import Font from '@ckeditor/ckeditor5-font/src/font';
 import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily'; 
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor'; 
 import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor'; 
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -47,6 +48,7 @@ ClassicEditor.builtinPlugins = [
 	FontFamily,
 	FontColor,
 	FontBackgroundColor,
+	Alignment,
 	Bold,
 	Italic,
 	BlockQuote,
@@ -75,6 +77,11 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
+			'|', 
+			'alignment:left', 
+			'alignment:right', 
+			'alignment:center', 
+			'alignment:justify',
 			'|',
 			'bold',
 			'italic',
